@@ -4,16 +4,16 @@ const mongoose = require('mongoose');
 
 require('dotenv/config');
 
-//const dbRoute = 'mongodb+srv://danielbugingo1:dbug.256@cluster0-gtr7v.mongodb.net/test?retryWrites=true&w=majority'
+// Import Routes
+const postsRoute = require('./routes/posts');
+
+app.use('/posts', postsRoute)
 
 // ROUTES
 app.get('/', (req, res)=>{
     res.send("We are on home page")
 })
 
-app.get('/posts', (req, res) => {
-    res.send('We are on posts.')
-})
 
 //Connect To DB
 mongoose.connect(process.env.DB_CONNECTION, {
