@@ -13,6 +13,10 @@ const PostSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    haunted: {
+        type: boolean,
+        required: true
+    }
 });
 
 module.exports = mongoose.model('Posts', PostSchema)
