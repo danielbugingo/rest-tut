@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/specific', (req, res) => {
-    res.send('We are on specific post')
+    res.send('We are on specific post page')
 })
 
 module.exports = router;
