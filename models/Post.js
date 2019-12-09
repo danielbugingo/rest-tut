@@ -14,7 +14,7 @@ const PostSchema = mongoose.Schema({
         default: Date.now
     },
     haunted: {
-        type: boolean,
+        type: Boolean,
         required: true
     }
 });
