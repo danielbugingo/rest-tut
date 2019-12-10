@@ -37,7 +37,7 @@ router.get('./:postId', async (req, res) => {
     }
 })
 
-//Deleting a post
+//Deleting a post from the database
 router.delete('./:postId', async (req, res) => {
     try{
         const removePost = await Post.remove({_id: req.params.postId });

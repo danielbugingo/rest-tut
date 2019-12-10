@@ -16,7 +16,8 @@ app.get('/', (req, res)=>{
     res.send("We are on home page")
 });
 
-//Connect To DB
+//Connection to the database. 
+//Mongodb cloud based
 mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
